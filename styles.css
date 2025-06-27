@@ -2,34 +2,39 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #121212;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
 }
 header {
-    background: #0d47a1;
-    padding: 2em;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
     text-align: center;
+}
+.banner {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
 }
 .whatsapp-button {
     display: inline-block;
     margin-top: 1em;
-    padding: 0.5em 1em;
+    padding: 0.7em 1.2em;
     background: #25d366;
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .services, .courses {
     padding: 2em;
-    background: #1f1f1f;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .course-card {
-    background: #2c2c2c;
+    background: rgba(255, 255, 255, 0.1);
     padding: 1em;
-    margin: 1em 0;
-    border-radius: 8px;
+    margin: 1.5em 0;
+    border-radius: 10px;
 }
 .course-card img {
     width: 100%;
@@ -39,12 +44,12 @@ header {
 .buy-button {
     display: inline-block;
     margin-top: 1em;
-    padding: 0.5em 1em;
-    background: #ffca28;
+    padding: 0.6em 1.2em;
+    background: #ffd700;
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 footer {
     text-align: center;
