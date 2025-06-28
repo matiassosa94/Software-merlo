@@ -7,17 +7,17 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0.6);
-    padding: 0 1em 2em;
+    padding: 2em 1em 2em; /* antes tenía menos */
     text-align: center;
 }
 
 .banner {
     width: 100%;
     height: auto;
-    max-height: 250px;
     object-fit: cover;
     display: block;
-    margin-bottom: 1em;
+    margin: 0 auto;
+    margin-bottom: 2em; /* agregado */
 }
 
 .whatsapp-button {
