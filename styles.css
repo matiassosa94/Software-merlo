@@ -44,6 +44,52 @@ header {
     text-align: center;
 }
 
+.course-card imbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom right, #0a1e3a, #1c3c64); /* azul metalizado */
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em 1em 2em; /* antes tenía menos */
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em; /* agregado */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.7em 1.2em;
+    background: #25d366;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.services, .courses {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .course-card img {
     width: 100%;
     max-width: 400px;
@@ -66,4 +112,51 @@ footer {
     padding: 1em;
     background: #000;
     color: #ccc;
+}
+g {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background: #ffd700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #000;
+    color: #ccc;
+}
+.diagnostico {
+  position: relative;
+  background-image: url("diagnostico-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.diagnostico::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.diagnostico .contenido {
+  position: relative;
+  z-index: 2;
 }
