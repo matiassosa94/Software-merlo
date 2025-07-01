@@ -1,0 +1,85 @@
+/* === Estilos para Software Merlo === */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #121212;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  color: #00ffcc;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  background-image: url('fondo-general.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.boton-cta {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.boton-cta:hover {
+  background-color: #00e6b8;
+}
+
+.cursos, .servicios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.curso-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.curso {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 15px;
+  transition: transform 0.
