@@ -20,11 +20,6 @@
     </nav>
   </header>
 
-  <!-- 🖼️ Banner de soporte técnico -->
-  <section class="soporte-banner">
-    <img src="soporte.jpg" alt="Soporte técnico" class="banner-soporte" />
-  </section>
-
   <!-- 🧭 Carrusel de servicios -->
   <section class="carrusel-servicios">
     <div class="carrusel-contenedor">
@@ -36,7 +31,6 @@
     </div>
   </section>
 
-  <!-- 📚 Cursos -->
   <section id="cursos" class="cursos">
     <h2>Cursos destacados</h2>
     <div class="curso-grid">
@@ -71,7 +65,6 @@
     </div>
   </section>
 
-  <!-- 🛠️ Servicios -->
   <section id="servicios" class="servicios">
     <h2>Servicios técnicos</h2>
     <ul>
@@ -83,7 +76,6 @@
     </ul>
   </section>
 
-  <!-- 📞 Contacto -->
   <footer id="contacto">
     <p>© 2025 Software Merlo</p>
     <p>Alias MercadoPago: <strong>matias.sosa.yaggie</strong></p>
@@ -91,24 +83,4 @@
     <p>WhatsApp: <a href="https://wa.me/541126572337">+54 11 2657-2337</a></p>
   </footer>
 
-  <!-- 💬 Botón flotante de WhatsApp -->
-  <a href="https://wa.me/541126572337?text=Hola!%20Estoy%20interesado%20en%20un%20curso%20o%20servicio%20técnico" class="whatsapp-flotante" target="_blank">💬</a>
-
-  <!-- 🚀 Script del carrusel -->
-  <script>
-    const mensajes = [
-      { texto: "🛠️ Soporte técnico para PC y notebooks", link: "soporte.html" },
-      { texto: "🌐 Diseño de páginas web a medida", link: "web.html" },
-      { texto: "📚 Más de 100 cursos disponibles", link: "#cursos" },
-      { texto: "📲 Asistencia remota y presencial", link: "remoto.html" }
-    ];
-    let indice = 0;
-    function cambiarMensaje(direccion) {
-      indice = (indice + direccion + mensajes.length) % mensajes.length;
-      const mensaje = mensajes[indice];
-      document.getElementById("mensaje-servicio").innerHTML =
-        `<a href="${mensaje.link}">${mensaje.texto}</a>`;
-    }
-  </script>
-</body>
-</html>
+  <a href="https://wa.me/541126572337?text=Hola!%20
