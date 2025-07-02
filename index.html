@@ -20,7 +20,6 @@
     </nav>
   </header>
 
-  <!-- 🧭 Carrusel de servicios -->
   <section class="carrusel-servicios">
     <div class="carrusel-contenedor">
       <button class="flecha" onclick="cambiarMensaje(-1)">⬅️</button>
@@ -83,4 +82,22 @@
     <p>WhatsApp: <a href="https://wa.me/541126572337">+54 11 2657-2337</a></p>
   </footer>
 
-  <a href="https://wa.me/541126572337?text=Hola!%20
+  <a href="https://wa.me/541126572337?text=Hola!%20Estoy%20interesado%20en%20un%20curso%20o%20servicio%20técnico" class="whatsapp-flotante" target="_blank">💬</a>
+
+  <script>
+    const mensajes = [
+      { texto: "🛠️ Soporte técnico para PC y notebooks", link: "soporte.html" },
+      { texto: "🌐 Diseño de páginas web a medida", link: "web.html" },
+      { texto: "📚 Más de 100 cursos disponibles", link: "#cursos" },
+      { texto: "📲 Asistencia remota y presencial", link: "remoto.html" }
+    ];
+    let indice = 0;
+    function cambiarMensaje(direccion) {
+      indice = (indice + direccion + mensajes.length) % mensajes.length;
+      const mensaje = mensajes[indice];
+      document.getElementById("mensaje-servicio").innerHTML =
+        `<a href="${mensaje.link}">${mensaje.texto}</a>`;
+    }
+  </script>
+</body>
+</html>
