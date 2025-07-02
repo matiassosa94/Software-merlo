@@ -52,3 +52,49 @@ footer a { color: #00ffcc; text-decoration: none; }
 
 nav a { margin-left: 10px; font-size: 0.9em; } }
 
+.banner-soporte {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.carrusel-servicios {
+  background: #f1f5fc;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.flecha {
+  font-size: 1.5em;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#mensaje-servicio a {
+  font-size: 1.1em;
+  color: #222;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  transition: background 0.3s;
+}
+
+#mensaje-servicio a:hover {
+  background: #d7ebff;
+}
