@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,13 +18,25 @@
       <a href="#servicios">Servicios</a>
       <a href="#contacto">Contacto</a>
     </nav>
-  </header>  <section class="hero">
-    <div class="contenedor-hero">
-      <img src="Banner.png" alt="Software Merlo" class="logo-principal" />
-      <h1>Más de 100 cursos disponibles y servicios técnicos confiables</h1>
-      <a href="https://wa.me/541126572337?text=Hola!%20Estoy%20interesado%20en%20un%20curso%20o%20servicio%20técnico" class="btn-hero">Consultar por WhatsApp</a>
+  </header>
+
+  <!-- 🔧 IMAGEN DE SOPORTE TÉCNICO (redimensionada) -->
+  <section class="soporte-banner">
+    <img src="soporte.jpg" alt="Soporte técnico" class="banner-soporte" />
+  </section>
+
+  <!-- 🧭 CARRUSEL DE SERVICIOS -->
+  <section class="carrusel-servicios">
+    <div class="carrusel-contenedor">
+      <button class="flecha" onclick="cambiarMensaje(-1)">⬅️</button>
+      <div id="mensaje-servicio">
+        <a href="soporte.html">🛠️ Soporte técnico para PC y notebooks</a>
+      </div>
+      <button class="flecha" onclick="cambiarMensaje(1)">➡️</button>
     </div>
-  </section>  <section id="cursos" class="cursos">
+  </section>
+
+  <section id="cursos" class="cursos">
     <h2>Cursos destacados</h2>
     <div class="curso-grid">
       <div class="curso">
@@ -47,15 +60,17 @@
         <a href="curso-community.html" class="btn">Ver más</a>
       </div>
       <div class="course-card">
-  <h3>Soporte Técnico para PC y Notebooks</h3>
-  <img src="soporte.jpg" alt="Servicio técnico">
-  <p>Mantenimiento, formateo, instalación de programas, limpieza y más.</p>
-  <div class="botones-curso">
-    <a href="soporte.html" class="buy-button">💬 Hacer consulta</a>
-  </div>
+        <h3>Soporte Técnico para PC y Notebooks</h3>
+        <img src="soporte.jpg" alt="Servicio técnico">
+        <p>Mantenimiento, formateo, instalación de programas, limpieza y más.</p>
+        <div class="botones-curso">
+          <a href="soporte.html" class="buy-button">💬 Hacer consulta</a>
+        </div>
       </div>
     </div>
-  </section>  <section id="servicios" class="servicios">
+  </section>
+
+  <section id="servicios" class="servicios">
     <h2>Servicios técnicos</h2>
     <ul>
       <li>🛠️ Reparación y diagnóstico</li>
@@ -64,12 +79,31 @@
       <li>🌐 Soporte remoto</li>
       <li>🖥️ Armado y mejora de rendimiento</li>
     </ul>
-  </section>  <footer id="contacto">
+  </section>
+
+  <footer id="contacto">
     <p>© 2025 Software Merlo</p>
     <p>Alias MercadoPago: <strong>matias.sosa.yaggie</strong></p>
     <p>CVU: <strong>0000003100027659914067</strong></p>
     <p>WhatsApp: <a href="https://wa.me/541126572337">+54 11 2657-2337</a></p>
-  </footer><a href="https://wa.me/541126572337?text=Hola!%20Estoy%20interesado%20en%20un%20curso%20o%20servicio%20técnico" class="whatsapp-flotante" target="_blank">💬</a>
+  </footer>
+  <a href="https://wa.me/541126572337?text=Hola!%20Estoy%20interesado%20en%20un%20curso%20o%20servicio%20técnico" class="whatsapp-flotante" target="_blank">💬</a>
 
+  <!-- 🚀 JavaScript para el carrusel -->
+  <script>
+    const mensajes = [
+      { texto: "🛠️ Soporte técnico para PC y notebooks", link: "soporte.html" },
+      { texto: "🌐 Diseño de páginas web a medida", link: "web.html" },
+      { texto: "📚 Más de 100 cursos disponibles", link: "#cursos" },
+      { texto: "📲 Asistencia remota y presencial", link: "remoto.html" }
+    ];
+    let indice = 0;
+    function cambiarMensaje(direccion) {
+      indice = (indice + direccion + mensajes.length) % mensajes.length;
+      const mensaje = mensajes[indice];
+      document.getElementById("mensaje-servicio").innerHTML =
+        `<a href="${mensaje.link}">${mensaje.texto}</a>`;
+    }
+  </script>
 </body>
 </html>
