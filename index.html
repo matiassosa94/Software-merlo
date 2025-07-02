@@ -20,6 +20,12 @@
     </nav>
   </header>
 
+  <!-- 🖼️ Banner de presentación -->
+  <section class="banner-presentacion">
+    <img src="banner-presentacion.jpg" alt="Software Merlo" class="banner-img" />
+  </section>
+
+  <!-- 🧭 Carrusel de servicios -->
   <section class="carrusel-servicios">
     <div class="carrusel-contenedor">
       <button class="flecha" onclick="cambiarMensaje(-1)">⬅️</button>
@@ -87,9 +93,8 @@
   <script>
     const mensajes = [
       { texto: "🛠️ Soporte técnico para PC y notebooks", link: "soporte.html" },
-      { texto: "🌐 Diseño de páginas web a medida", link: "web.html" },
       { texto: "📚 Más de 100 cursos disponibles", link: "#cursos" },
-      { texto: "📲 Asistencia remota y presencial", link: "remoto.html" }
+      { texto: "🌐 Creación de páginas web a medida", link: "web.html" }
     ];
     let indice = 0;
     function cambiarMensaje(direccion) {
