@@ -117,7 +117,7 @@ footer a {
   z-index: 999;
 }
 
-/* Carrusel */
+/* === Carrusel === */
 .carrusel-servicios {
   background: #f1f5fc;
   padding: 1em;
@@ -129,4 +129,19 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/karames/curso-markdown-master/tree/9a65a17dd637e2be8fee24d6ea6c5558403d5487/markdown%2F100-codigo-fuente.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.flecha {
+  font-size: 1.5em;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/karames/curso-markdown-master/tree/9a65a17dd637e2be8fee24d6ea6c5558403d5487/markdown%2F100-codigo-fuente.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
