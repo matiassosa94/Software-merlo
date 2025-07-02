@@ -47,6 +47,7 @@ nav a:hover {
   margin-bottom: 1em;
 }
 
+/* Carrusel */
 .carrusel-servicios {
   background: #f1f5fc;
   padding: 1em;
@@ -96,6 +97,7 @@ nav a:hover {
   background: #d7ebff;
 }
 
+/* Cursos y servicios */
 .cursos, .servicios {
   padding: 40px 20px;
   text-align: center;
@@ -131,8 +133,9 @@ nav a:hover {
 
 .curso img, .course-card img {
   width: 100%;
+  height: auto;
   max-height: 180px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -186,6 +189,7 @@ footer a {
   z-index: 999;
 }
 
+/* 📱 Responsivo */
 @media (max-width: 600px) {
   .banner-img {
     max-height: 150px;
@@ -197,8 +201,11 @@ footer a {
   }
 
   #mensaje-servicio a {
-    font-size: 1em;
-    padding: 0.5em 1em;
+    font-size: 1.1em;
+    padding: 0.6em 1em;
+    display: inline-block;
+    max-width: 90%;
+    word-wrap: break-word;
   }
 
   .flecha {
