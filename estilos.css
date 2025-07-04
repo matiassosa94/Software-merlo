@@ -345,3 +345,45 @@ footer a {
 .formulario-contacto button:hover {
   background-color: #00e6b8;
 }
+.descripcion-web {
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+
+.descripcion-web h1 {
+  color: #00ffcc;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.descripcion-web ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1em;
+  line-height: 1.8em;
+}
+
+.descripcion-web li {
+  margin-bottom: 0.3em;
+}
+
+.cta-web {
+  display: inline-block;
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px #00ffcc55;
+  transition: background 0.3s;
+}
+
+.cta-web:hover {
+  background-color: #00e6b8;
+}
