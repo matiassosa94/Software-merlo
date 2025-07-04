@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Software Merlo</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="logo">
+      <img src="Banner.png" alt="Software Merlo" />
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- 📬 Formulario de consulta -->
+  <section class="formulario-contacto">
+    <h1>Solicitar presupuesto o consulta</h1>
+    <p>Completá el formulario o escribinos directo por WhatsApp:</p>
+
+    <form action="https://formspree.io/f/tu_form_id" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu email" required />
+      <textarea name="mensaje" placeholder="Contanos qué necesitás..." required></textarea>
+      <button type="submit">Enviar consulta</button>
+    </form>
+
+    <a href="https://wa.me/541126572337?text=Hola!%20Quisiera%20hacer%20una%20consulta%20sobre%20cursos%20o%20servicios%20de%20Software%20Merlo" class="cta-web" target="_blank">💬 Consultar por WhatsApp</a>
+  </section>
+
+  <section style="text-align: center; margin: 40px 0;">
+    <a href="index.html" class="btn">⬅️ Volver al inicio</a>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background: #111;">
+    <p>© 2025 Software Merlo</p>
+    <p>WhatsApp: <a href="https://wa.me/541126572337">+54 11 2657-2337</a></p>
+  </footer>
+</body>
+</html>
